@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Group Scheduling</title>
+    <link rel="stylesheet" href="p1style.css">
+    <script src="script1.js" defer></script>
+</head>
+<body>
+    <header>
+    <div class="logo"></div>
+    <div class="title">No Name Yet</div>
+    <div class="settings">
+        <button id="toggle-mode">Night Mode</button>
+        <input type="text" placeholder="Search in site">
+        <div class="alarm">
+            <img src="alarm-icon.png" alt="Alarm">
+            <span>Set Alarm</span>
+        </div>
+     </div>
+   </header>
+    <main>
+        <aside>
+            <section class="monthly">
+                <h2>Monthly Overview</h2>
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <button id="prev-month">Previous</button>
+                        <span id="current-month"></span>
+                        <button id="next-month">Next</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody id="calendar-body">
+                            <!-- Calendar dates will be generated here -->
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="to-do">
+                <h2>To-Do</h2>
+                <div class="todo-container">
+                    <input type="text" id="todo-input" placeholder="Add a new task">
+                    <button id="add-todo">Add</button>
+                    <ul id="todo-list"></ul>
+                </div>
+            </section>
+        </aside>
+<section class="schedule">
+    <div class="group-header">
+        <button class="new-group">New Group</button>
+        <div class="group-icons" id="group-icons">
+            <!-- Group icons -->
+            <div class="group-icon green-tone-a">A</div>
+            <div class="group-icon green-tone-b">B</div>
+            <div class="group-icon green-tone-c">C</div>
+            <div class="group-icon green-tone-d">D</div>
+            <div class="group-icon green-tone-e">E</div>
+        </div>
+    </div>
+    <div class="weekly-planner">
+        <div class="time-column">
+            <!-- Time intervals -->
+            <div class="time-slot">5 AM</div>
+            <div class="time-slot">6 AM</div>
+            <div class="time-slot">7 AM</div>
+            <div class="time-slot">8 AM</div>
+            <div class="time-slot">9 AM</div>
+            <div class="time-slot">10 AM</div>
+            <div class="time-slot">11 AM</div>
+            <div class="time-slot">12 PM</div>
+            <div class="time-slot">1 PM</div>
+            <div class="time-slot">2 PM</div>
+            <div class="time-slot">3 PM</div>
+            <div class="time-slot">4 PM</div>
+            <div class="time-slot">5 PM</div>
+            <div class="time-slot">6 PM</div>
+            <div class="time-slot">7 PM</div>
+            <div class="time-slot">8 PM</div>
+            <div class="time-slot">9 PM</div>
+            <div class="time-slot">10 PM</div>
+            <div class="time-slot">11 PM</div>
+            <div class="time-slot">12 AM</div>
+        </div>
+        <div class="day-column" id="sunday"></div>
+        <div class="day-column" id="monday"></div>
+        <div class="day-column" id="tuesday"></div>
+        <div class="day-column" id="wednesday"></div>
+        <div class="day-column" id="thursday"></div>
+        <div class="day-column" id="friday"></div>
+        <div class="day-column" id="saturday"></div>
+    </div>
+</section>
+
+    </main>
+</body>
+</html>
